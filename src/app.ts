@@ -22,6 +22,7 @@ export const createApp = (): express.Application => {
 
   // API Routes
   app.use('/api', routes)
+  app.use('/auth', routes)
 
   return app
 }

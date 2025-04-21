@@ -1,11 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES6",
     "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
+    "moduleResolution": "node",
+    "target": "es2017",
+    "sourceMap": true,
+    "pretty": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "listFiles": false,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "test/**/*"]
 }

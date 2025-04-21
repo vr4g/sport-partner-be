@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import SportsController from '../controllers/Sports.controller'
+import UserController from '@/controllers/User.controller'
 
 const router = Router()
 
-router.use('/', SportsController)
+router.use('/', UserController)
 
 export default router
